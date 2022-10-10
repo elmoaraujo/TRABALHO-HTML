@@ -1,0 +1,258 @@
+#openMenu, #closeMenu {
+	/* Remove a borda. */
+	border: none;
+	/* Remove a cor de fundo. */
+	background: none;
+	/* Tamanho da fonte. */
+	font-size: 30px;
+	/* Espessura da forte. */
+	font-weight: bold;
+	/* Margem ao redor do elemento  */
+	/* os lados (superior, direito, inferior e esquerdo) */
+	padding: 0px 5px 0px 5px;
+	/* Muda o cursor do mouse para ponteiro.*/
+	cursor: pointer;
+	/* Oculta o elemento. */
+	display: none;
+}
+
+a {color: aliceblue;text-decoration: none;}
+
+nav {
+	/* Alinha os itens na vertical. */
+	justify-content: flex-end;
+	/* Alinha os itens na horizontal. */
+	align-items: center;
+	flex: 1 1 200px;
+}
+
+:root{
+    --bg-body: #131416;
+    --color-font: #ffff;
+    --color-button: #fffc089e;
+    --color-card: #1E212C;
+}
+
+.container{
+    max-width: 830px;
+    margin: auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #080808;
+}
+
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.logo h2{
+    color: var(--color-font);
+}
+
+.logo img{
+    width: 59px;
+    height: 57px;
+    margin-right: 4px;
+}
+
+.section-1{
+    display: flex;
+    margin-top: 53px;
+}
+
+.action-title h2{
+    font-size: 21px;
+    color: var(--color-font);
+}
+
+.button{
+    background-color: var(--color-button);
+    display: inline-block;
+    padding: 15px 70px;
+    border-radius: 50px;
+    color: var(--color-font);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ebook img{
+    width: 234px;
+    height: auto;
+    margin-right: 42px;
+}
+
+.section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 23px;
+}
+
+.section-2 h2{
+    color: var(--color-font);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-card);
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    color: var(--color-font);
+    text-align: center;
+    text-decoration: none;
+}
+
+.card img{
+    width: 65px;
+    height: 65px;
+}
+
+.section-3{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 58px;
+    margin-bottom: 51px;
+    flex-wrap: wrap;
+}
+
+.button-2{
+    display: inline-block;
+    background-color: #1E212C;
+    color: var(--color-font);
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.section-3 h2{
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.section-3 p{
+    color: var(--color-font);
+    margin-top: -25px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C2029;
+    height: 100px;
+    padding-bottom: 40px;
+}
+
+.button-footer{
+    display: inline-block;
+    padding: 15px 70px;
+    background-color: var(--color-button);
+    border-radius: 50px;
+    color: var(--color-font);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: -40px;
+}
+
+footer p{
+    color: var(--color-font);
+    font-size: 14px;
+    margin-top: 63px;
+}
+
+@media (max-width: 420px){
+    .section-1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .ebook img{
+        margin-right: 0px
+    }
+
+    .action-title{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .action-title h2{
+        font-size: 40px;
+        text-align: center;
+        font-size: 30px;
+        color: var(--color-font);
+    }
+
+    .button{
+        margin-top: 20px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        margin-top: 40px;
+    }
+
+    .section-3 h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .section-3 p{
+        font-size: 14px;
+    }
+
+}
+
+ body {
+    background: linear-gradient(-45deg, #0c0c0c, #020a38, #182414, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
